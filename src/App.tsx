@@ -55,8 +55,7 @@ function App() {
 
   return (
     <div className={`main flex flex-col gap-8 items-center justify-center m-auto max-w-[800px] h-auto w-screen ${theme === 'dark' ? 'dark:bg-gray-800' : 'bg-white'} md:overflow-hidden`}>
-      <div className="header flex items-center justify-center h-16 relative w-screen">
-        <h1
+<div className="header flex flex-col items-center justify-center relative w-screen gap-4 py-4">        <h1
           className={`message text-2xl font-semibold text-center cursor-pointer px-5 py-2 rounded-full outline-1 outline-gray-500 hover:outline ${isWinner ? "text-green-600" : "text-red-600"}`}
           onClick={() => window.location.reload()}
         >
@@ -74,8 +73,8 @@ function App() {
 
         <button
           onClick={handleThemeChange}
-          className='items-center justify-center bg-transparent border-[1.3px] border-black px-2 py-2 rounded-full hover:text-white hover:bg-[#5e17eb] absolute top-20 right-2 md:right-64 md:top-14 dark:border-[#5e17eb]'>
-          Change Theme
+className='bg-transparent border border-black px-2 py-2 rounded-full hover:text-white hover:bg-[#5e17eb] dark:border-[#5e17eb]'>
+            Change Theme
         </button>
       </div>
 
